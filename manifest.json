@@ -1,0 +1,7 @@
+{
+	"name": "MenuSkipper",
+	"version_number": "0.0.1",
+	"description": "Loads the hub right after loading the main menu.",
+	"website_url": "",
+	"dependencies": []
+}
