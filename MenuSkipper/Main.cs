@@ -26,19 +26,20 @@ namespace MenuSkipper
         }
 
         private void WarehouseReady()
-        {
-            var bootstrapperComponent = GameObject.FindObjectOfType<SceneBootstrapper_Bonelab>();
-            
-            var crates = AssetWarehouse.Instance.GetCrates();
-
-            foreach (Crate crate in crates)
-            {
-                if (crate.Title.Contains("BONELAB Hub"))
-                {
-                    bootstrapperComponent.VoidG114CrateRef = new LevelCrateReference(crate.Barcode.ID);
-                    bootstrapperComponent.MenuHollowCrateRef = new LevelCrateReference(crate.Barcode.ID);
-                }
-            }
-        }
+		{
+			MelonLogger.Msg("WarehouseReady was called.", Color.green);
+			SceneBootstrapper_Bonelab sceneBootstrapper_Bonelab = UnityEngine.Object.FindObjectOfType<SceneBootstrapper_Bonelab>();
+            Il2CppSystem.Collections.Generic.List<Crate> crates = AssetWarehouse.Instance.GetCrates();
+			foreach (Crate crate in crates)
+			{
+				bool flag = crate.Title.Contains("BONELAB Hub");
+				if (flag)
+				{
+					MelonLogger.Msg("Flag was passed",Color.green);
+					sceneBootstrapper_Bonelab.VoidG114CrateRef = new LevelCrateReference(crate.Barcode.ID);
+					sceneBootstrapper_Bonelab.MenuHollowCrateRef = new LevelCrateReference(crate.Barcode.ID);
+				}
+			}
+		}
     }
 }
