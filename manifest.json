@@ -1,6 +1,6 @@
 {
 	"name": "MenuSkipper",
-	"version_number": "0.1.0",
+	"version_number": "0.1.1",
 	"description": "Skips the menus and loads straight into the BoneLab Hub.",
 	"website_url": "https://github.com/TimStewartJ/MenuSkipper",
 	"dependencies": ["LavaGang-MelonLoader-0.5.6"]
