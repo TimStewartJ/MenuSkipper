@@ -1,8 +1,8 @@
 ﻿using MelonLoader;
-using SLZ.Marrow.SceneStreaming;
+using SLZ.Bonelab;
 using SLZ.Marrow.Warehouse;
-using UnityEngine;
 using System;
+using UnityEngine;
 
 namespace MenuSkipper
 {
@@ -11,7 +11,7 @@ namespace MenuSkipper
         public const string Name = "MenuSkipper";
         public const string Author = "timmie";
         public const string Company = null;
-        public const string Version = "0.1.0";
+        public const string Version = "0.1.1";
         public const string DownloadLink = null;
     }
 
